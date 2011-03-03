@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Investwithme</title>
+  <title>IntuitSprint</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+  <div id="header">
+    <div id="header_div">
+        <span id="header_leftside">invest<span style="color:#5995E3">r</span></span>
+        <span id="header_rightside">Home | Gallery | OMG | Login</span>
+    </div>
+  </div>
+  <div id="header_shadow"></div>
+  <div id="body_div">
+  <!--=======PAGE CONTENT GOES IN HERE========-->
+  <%= yield %>
+  <!-- ========END PAGE CONTENT ==========-->
+  </div>
 </body>
 </html>

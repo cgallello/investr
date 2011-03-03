@@ -1,0 +1,162 @@
+html, body {
+  font-family:"verdana","arial", sans-serif;
+  background-color:#F5F5F5;
+  color:#5E5E5E;
+  text-shadow: 0px 1px 1px #ffffff;
+  filter: dropshadow(color=#ffffff, offx=0, offy=1);
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+}
+
+#header{
+  
+  width:100%;
+  height:65px;
+  margin-top:0;
+  padding-top:0;
+  background: #fcfff4; /* old browsers */
+  background: -moz-linear-gradient(top, #fcfff4 0%, #EDEDED 99%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(99%,#EDEDED)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#EDEDED',GradientType=0 ); /* ie */
+}
+
+#header_shadow{
+  height:6px;
+  width:100%;
+  background: #EDEDED; /* old browsers */
+  background: -moz-linear-gradient(top, #D1D1D1 0%, #F5F5F5 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D1D1D1), color-stop(100%,#F5F5F5)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D1D1D1', endColorstr='#F5F5F5',GradientType=0 ); /* ie */
+  background-color:black;
+}
+
+#header_div{
+  margin: 0 auto;
+  font-size:35px;
+  width:900px;
+  padding-top:8px;
+}
+
+#header_rightside{
+  float:right;
+  font-size:15px;
+  margin-top:15px;
+}
+
+#header_leftside{
+  float:left;
+  margin-top:15px;
+}
+
+/* === BODY ===*/
+
+#body_div{
+  margin: 0 auto;
+  width:900px;
+  padding-top:10px;
+}
+
+#main{
+  padding:20px;
+  float:left;
+  height:900px;
+  width:100%;
+}
+
+h1{
+  font-size:25px;
+}
+
+/* === Business Profile Page ===*/
+
+#video_box{
+  width:500px;
+  height:400px;
+  float:left;
+}
+
+#business_info_box{
+  width:360px;
+  height:360px;
+  float:left;
+  padding:15px;
+  background-color:#EDEDED;
+}
+
+#business_description{
+  width:100%;
+}
+
+/* === Home Page ===*/
+
+#feature_box{
+  width:100%;
+  height:550px;
+  background-color:#F0F0F0;
+  float:left;
+  -webkit-box-shadow: 0px 0px 10px #9E9E9E;
+  -moz-box-shadow: 0px 0px 10px #9E9E9E;
+  box-shadow: 0px 0px 10px #9E9E9E;
+  
+  color:#5E5E5E;
+  text-shadow: 0px 1px 1px #ffffff;
+  
+}
+
+#feature_column_left{
+  width:50%;
+  float:left;
+  height:490px;
+  font-size:30px;
+  text-align:center;
+  text-height:40px;
+  border-right-style:solid;
+  border-right-width:0px;
+  border-right-color:#424242;
+}
+
+#feature_column_right{
+  width:50%;
+  float:left;
+  height:480px;
+  font-size:30px;
+  text-align:center;
+  text-height:40px;
+}
+
+#get_started_button{
+  width:250px;
+  height:40px;
+  font-size:24px;
+  padding-top:20px;
+  margin: 0 auto;
+  color:#ffffff;
+  text-shadow: 0px 1px 1px #595959;
+  
+  
+  -webkit-box-shadow: 0px 0px 10px #0f0f0f;
+  -moz-box-shadow: 0px 0px 10px #0f0f0f;
+  box-shadow: 0px 0px 10px #0f0f0f;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  background: #78B3ED; /* old browsers */
+  background: -moz-linear-gradient(top, #78B3ED 0%, #1B81E8 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78B3ED), color-stop(100%,#1B81E8)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78B3ED', endColorstr='#1B81E8',GradientType=0 ); /* ie */
+  
+}
+
+#feature_box_header{
+  width:100%;
+  height:40px;
+  margin-top:0;
+  padding-top:20px;
+  font-size:20px;
+  background: #fcfff4; /* old browsers */
+  background: -moz-linear-gradient(top, #fcfff4 0%, #EDEDED 99%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(99%,#EDEDED)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#EDEDED',GradientType=0 ); /* ie */
+}
