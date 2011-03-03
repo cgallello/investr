@@ -1,5 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+
+
+<%= form_for @vote_up do |f| %>
+<%= f.hidden_field :business_id, :value => @business.id %>
+<%= f.hidden_field :points, :value => 1 %>
+<%= image_submit_tag 'like.jpg', :size => "50x10" %>
+<span><%= @project.votes.where(:points => 1).count %> votes</span>
+<% end %>
+
 <p>
   <b>User:</b>
   <%= @business.user_id %>

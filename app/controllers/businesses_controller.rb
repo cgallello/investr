@@ -12,6 +12,11 @@ class BusinessesController < ApplicationController
 
   # GET /businesses/1
   # GET /businesses/1.xml
+  
+  def show_by_random
+    @vote_up = @project.votes.build
+  end
+  
   def show
     @business = Business.find(params[:id])
 

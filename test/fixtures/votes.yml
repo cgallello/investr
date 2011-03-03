@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  business_id: MyString
+  points: 1
+
+two:
+  business_id: MyString
+  points: 1
