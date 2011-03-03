@@ -10,7 +10,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110303041803) do
+ActiveRecord::Schema.define(:version => 20110303043224) do
+
+  create_table "businesses", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "video_url"
+    t.string   "photo_url"
+    t.decimal  "funding_target"
+    t.string   "attachment_url"
+    t.integer  "votes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pools", :force => true do |t|
+    t.string   "category"
+    t.decimal  "free_money"
+    t.decimal  "invested_money"
+    t.decimal  "return_rate"
+    t.string   "analytics_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transactions", :force => true do |t|
+    t.string   "user_id"
+    t.string   "pool_id"
+    t.decimal  "investment_amount"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -26,6 +57,11 @@ ActiveRecord::Schema.define(:version => 20110303041803) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "pic_url"
+    t.decimal  "free_money"
+    t.decimal  "invested_money"
+    t.string   "analytics_url"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

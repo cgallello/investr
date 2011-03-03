@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category: MyString
+  free_money: 9.99
+  invested_money: 9.99
+  return_rate: 9.99
+  analytics_url: MyString
+
+two:
+  category: MyString
+  free_money: 9.99
+  invested_money: 9.99
+  return_rate: 9.99
+  analytics_url: MyString

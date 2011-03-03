@@ -1,5 +1,11 @@
 Investwithme::Application.routes.draw do
   
+  resources :transactions
+
+  resources :pools
+
+  resources :businesses
+
   devise_for :users
 
   root :to => "home#index"
