@@ -12,6 +12,8 @@ Investwithme::Application.routes.draw do
 
   resources :businesses
 
+  resources :page
+
   devise_for :users
 
   root :to => "page#home"
