@@ -1,5 +1,9 @@
 Investwithme::Application.routes.draw do
   
+  get "page/home"
+
+  get "page/analytics"
+
   resources :transactions
 
   resources :pools
@@ -8,7 +12,7 @@ Investwithme::Application.routes.draw do
 
   devise_for :users
 
-  root :to => "home#index"
+  root :to => "page#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
